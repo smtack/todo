@@ -37,7 +37,7 @@ export default function Show({auth, project, tasks}) {
                                         id="task"
                                         value={data.task}
                                         placeholder="New Task"
-                                        className="mt-1 max-h-96 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                        className="mt-1 max-h-96 p-2 block w-full bg-white rounded-md border border-gray-300 shadow-xs focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
                                         onChange={e => setData('task', e.target.value)} />
                                     <InputError message={errors.task} className="mt-2" />
                                     <PrimaryButton className="mt-4" disabled={processing}>Add</PrimaryButton>

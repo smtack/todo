@@ -27,7 +27,7 @@ export default function Create({auth}) {
                         id="title"
                         value={data.title}
                         placeholder="New Project"
-                        className="mt-1 block w-full"
+                        className="mt-1 block w-full bg-white"
                         onChange={e => setData('title', e.target.value)} />
                     <InputError message={errors.title} className="mt-2" />
                     <PrimaryButton className="mt-4" disabled={processing}>Create</PrimaryButton>

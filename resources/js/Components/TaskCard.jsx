@@ -26,7 +26,11 @@ export default function TaskCard({task}) {
                 <Link as="button" href={route('tasks.toggle', task.id)} method="patch"><Checkbox className="mr-2" checked={task.completed} /></Link>
                 {editing
                     ? <form onSubmit={submit}>
-                        <textarea value={data.task} onChange={e => setData('task', e.target.value)} className="mt-1 max-h-96 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                        <textarea
+                            value={data.task}
+                            onChange={e => setData('task', e.target.value)}
+                            className="mt-1 max-h-96 p-2 block w-full rounded-md border border-gray-300 shadow-xs focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
+                        ></textarea>
                         <InputError message={errors.task} className='mt-2' />
                         <div className="space-x-2">
                             <PrimaryButton className='mt-4'>Update</PrimaryButton>

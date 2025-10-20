@@ -17,7 +17,7 @@ export default function ProjectCard({project}) {
     return (
         <Link href={route('projects.show', project.id)}>
             <div
-                className="group overflow-hidden my-4 bg-white shadow-sm sm:rounded-lg hover:bg-purple-600 hover:cursor-pointer hover:shadow-slate-500"
+                className="group overflow-hidden my-4 bg-white shadow-xs sm:rounded-lg hover:bg-purple-600 hover:cursor-pointer hover:shadow-slate-500"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
             >
